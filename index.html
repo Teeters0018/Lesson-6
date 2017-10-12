@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE"
     
     <!--Links to css files or font files-->      
-    <link rel="stylesheet" type="text/css" href="css/framework.css"> 
+<!--    <link rel="stylesheet" type="text/css" href="css/framework.css"> -->
      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" href="css/style.css">       
 </head>
     
     <body>
+    <div class='container-fluid'>
     <div class='row'>
         
-        <div class='col-12 border'>
+        <div class='col-md-12 border'>
     
             <header id='header'> 
                 
@@ -28,7 +29,7 @@
     </div>
 <!--End Header-->
     <div class='row'>
-        <div class='col-12 border'>
+        <div class='col-md-12 border'>
                 <nav id='nav'>
                      <ul class='button-wrap'>
                          <button>Schedule</button>
@@ -42,13 +43,12 @@
 <!--End Menu-->
              
              <div class='row max-width'>
-             <div class='col-8 border'>
+             <div class='col-md-8 border'>
                   <div id='main-content-wrapper'>
                        
                       <div class="side-by-side">
-                            <section class="image-content">
-              
-                                    <img src="images/me.jpg">
+                            <section class="image-content col-6">
+                                <img src="images/me.jpg">
                            <h4>
                            <a 
                            href='https://www.google.com/'>Lucas Teeters</a>
@@ -73,7 +73,7 @@
                  
                         </div>    
 <!--end of main-content-wrapper -->
-                 <div class='col-4 border'>
+                 <div class='col-md-4 border'>
                      <div id="aside-content-wrapper">
                          <aside id='aside-right'>
                              <h3>latest work</h3>
@@ -95,26 +95,30 @@
              </div>
 <!--end of middle wrapper-->
    
-       <div id='favorite-sites' class="row"> 
-        
-        <div class='col-4 border'>
-               <img src="images/facebook.png"> 
+       <div id="favorite-sites"> 
+        <div class="row">
+        <div class='col-md-4 border'>
+               <img class="img-responsive" src="images/facebook.png"> 
         </div>
-        <div class='col-4 border'>
-                <img src="images/github%20icon.png">
+        <div class='col-md-4 border'>
+                <img class="img-responsive" src="images/github%20icon.png">
         </div>
-        <div class='col-4 border'>
-                <img src="images/twitter.png">
+        <div class='col-md-4 border'>
+                <img class="img-responsive" src="images/twitter.png">
            </div>
-       
+        </div>
        </div>
         <div class="row">
-            <div class='col-12 border'>
+            <div class='col-md-12 border'>
                 <footer><h1>footy</h1></footer>       
             </div>
         </div>
-<!--end of container div-->
+   </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+                
+
 
     
     </body>
